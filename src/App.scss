@@ -1,0 +1,35 @@
+/*TODO*/
+
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  .reset {
+    .reset-link {
+      margin: 20px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: 1px solid red;
+      color: #fff;
+      background-color: red;
+    }
+  }
+  #button-container {
+    margin: 15px 0;
+    button:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+  #extracted-letters,
+  #letters-container {
+    display: flex; /* or inline-flex */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+}

@@ -1,38 +1,74 @@
 .App {
+  max-width: 500px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .reset .reset-link {
+  margin: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+  color: #fff;
+  background-color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#button-container {
+  margin: 15px 0;
+}
+#button-container button:nth-child(2) {
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#extracted-letters,
+#letters-container {
+  display: flex; /* or inline-flex */
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 70%;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#extracted-letters .letter,
+#letters-container .letter.extracted,
+#letters-container .letter {
+  margin-left: 4px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border-style: outset;
+  border: 1px solid #d3d3d3;
+  border-color: #000;
+  background-color: #fff;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  font-size: 1em;
+  line-height: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#letters-container .letter.extracted {
+  background-color: #eee;
+  border-color: #ddd;
+  color: #ddd;
+}
+
+#extracted-letters-containers .extracted {
+  font-size: 5em;
+  text-transform: capitalize;
+}
+
+#extracted-letters .letter {
+}
+div.reset {
+  display: flex;
+  justify-content: right;
 }
